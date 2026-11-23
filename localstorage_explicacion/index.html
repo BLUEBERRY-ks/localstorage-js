@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios independientes de LocalStorage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ejercicios de LocalStorage</h1>
+
+    <!-- Ejercicio 1: Guardar un nombre -->
+    <section>
+        <h2>Ejercicio 1. Guardar un nombre</h2>
+        <form action="">
+            <label for="nombreGuardar">Nombre:</label>
+            <input type="text" id="nombreGuardar" placeholder="Escribe un nombre">
+            <button type="button" onclick="guardarNombre()">Guardar Nombre</button>
+        </form>
+        <p id="resultadoGuardar"></p>
+    </section>
+
+    <!-- Ejercicio 2: Mostrar los nombres guardados -->
+    <section>
+        <h2>Ejercicio 2: Mostrar los nombres guardados</h2>
+        <form action="">
+            <button type="button" onclick="mostrarNombre()">Mostrar nombres</button>
+        </form>
+        <ul id="resultadoMostrar"></ul>
+    </section>
+
+    <!-- Ejercicio 3: Editar el nombre guardado -->
+    <section>
+        <h2>Ejercicio 3. Editar el nombre guardado</h2>
+        <form id="formEditar">
+            <label for="nombreEditar">Nuevo nombre:</label>
+            <input id="nombreEditar" type="text" placeholder="Nuevo nombre">
+            <button type="submit">Actualizar nombre</button>
+        </form>
+        <p id="resultadoEditar"></p>
+    </section>
+
+    <!-- Ejercicio 4: Eliminar el nombre guardado -->
+    <section>
+        <h2>Ejercicio 4. Eliminar el nombre guardado</h2>
+        <form id="formEliminar">
+            <button type="submit" class="danger">Eliminar nombre</button>
+        </form>
+        <p id="resultadoEliminar"></p>
+    </section>
+
+    <!-- Ejemplo extra: Formulario de mascota (objeto) -->
+    <section>
+        <h2>Ejemplo: Guardar una mascota (objeto)</h2>
+        <form id="formMascota">
+            <label for="mascota">Mascota:</label>
+            <input type="text" id="mascota" name="mascota" placeholder="Nombre de la mascota">
+
+            <label for="raza">Raza:</label>
+            <input type="text" id="raza" name="raza" placeholder="Raza">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" placeholder="Edad">
+
+            <button type="submit">Guardar mascota</button>
+        </form>
+        <p id="resultadoMascota"></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
